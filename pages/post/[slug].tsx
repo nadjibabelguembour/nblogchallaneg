@@ -7,6 +7,8 @@ import PortableText from "react-portable-text";
 import { useForm, SubmitHandler } from "react-hook-form";
 import { useState } from "react";
 
+import {previewClient} from '../../lib/sanity';
+
 interface IFormInput {
   _id: string;
   name: string;
@@ -49,7 +51,7 @@ function Post({ post }: Props) {
     <main>
       <Header />
       <img
-        className="object-cover w-full h-40"
+        className=" w-1/2 h-1/5 object-cover flex justify-center items-center mx-auto  "
         src={urlFor(post.mainImage).url()!}
         alt=""
       />
@@ -218,7 +220,7 @@ export const getStaticPaths = async () => {
     fallback: "blocking",
   };
 };
-
+// this way we're getting the post information for each page
 export const getStaticProps: GetStaticProps = async ({ params }) => {
   const query = `*[_type == "post" && slug.current == $slug][0]{
         _id,
@@ -252,3 +254,4 @@ export const getStaticProps: GetStaticProps = async ({ params }) => {
     revalidate: 60, // after 60 seconds it will update the old cached version
   };
 };
+

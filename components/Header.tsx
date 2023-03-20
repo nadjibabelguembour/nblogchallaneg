@@ -6,17 +6,17 @@ function Header() {
     <header className="flex justify-between p-5 mx-auto max-w-7xl">
       <div className="flex items-center space-x-5">
         <Link href="/">
-          <h1 className="font-serif text-3xl cursor-pointer">BatoolBlog</h1>
+          <h1 className="font-serif text-3xl cursor-pointer"><span className=" text-purple-900 ">N.</span>Blog</h1>
         </Link>
 
         <div className="items-center hidden space-x-5 md:inline-flex ">
           <Link href="/#about">
-            <h3 className="rounded-full cursor-pointer hover:bg-gray-200 ">
+            <h3 className="rounded-full cursor-pointer hover:bg-purple-200 ">
               About
             </h3>
           </Link>
           <Link href="/#contact">
-            <h3 className="rounded-full cursor-pointer hover:bg-gray-200">
+            <h3 className="rounded-full cursor-pointer hover:bg-purple-200">
               Contacts
             </h3>
           </Link>
@@ -24,7 +24,7 @@ function Header() {
       </div>
       <div className="flex items-center space-x-5 text-black">
         <Link href="#posts">
-          <h3 className="px-4 py-1 border border-black rounded-full cursor-pointer">
+          <h3 className="px-4 py-1 border border-purple-900 rounded-full cursor-pointer text-purple-900 hover:bg-purple-200">
             Get Started
           </h3>
         </Link>

@@ -8,6 +8,9 @@ import Footer from "../components/Footer";
 import { sanityClient, urlFor } from "../sanity";
 import { Post } from "../typings";
 
+//interface is a syntactical contract that an entity should conform to (a special type...)
+// if we use post directly without interface we have to define what the props actually
+//look like in addition to defining a type and that is done by using interface. (it is defined in typings.ts)
 interface Props {
   posts: [Post];
 }
@@ -18,16 +21,16 @@ export default function Home({ posts }: Props) {
   return (
     <div className="mx-auto max-w-7xl">
       <Head>
-        <title>Batool Blog</title>
+        <title>N.Blog</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
       <Header />
-      <div className="flex items-center justify-between px-10 mx-auto space-y-5 bg-gray-300 rounded max-w-7xl sm:p-10">
+      <div className="flex items-center justify-between px-10 mx-auto space-y-5  rounded max-w-7xl sm:p-10 bg-purple-200">
         <div className="">
           <h1 className="max-w-xl font-sans text-5xl ">
-            <span className="font-serif cursor-pointer">BatoolBlog</span> is a
-            place where Batool writes!
+            <span className="font-serif cursor-pointer italic"><span className="text-7xl text-purple-900 ">N.</span>Blog</span> is a
+            place where Nadjiba writes about what she loves most!
           </h1>
           <h2 className="pt-5 font-sans text-2xl text-black">
             Join in, you might be interested!{" "}

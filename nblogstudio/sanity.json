@@ -1,11 +1,11 @@
 {
   "root": true,
-  "project": {
-    "name": "batblog"
-  },
   "api": {
-    "projectId": "sh27y642",
+    "projectId": "019hcqfp",
     "dataset": "production"
+  },
+  "project": {
+    "name": "nblogstudio"
   },
   "plugins": [
     "@sanity/base",
