@@ -1,0 +1,32 @@
+
+.login {
+   display: flex;
+   align-items: center;
+}
+.login button {
+  all: unset;
+  border: 1px solid var(--white-color);
+  color: white;
+  text-transform: capitalize;
+  cursor: pointer;
+  padding: 5px 15px;
+  font-weight: 600;
+  border: 1px solid rgb(88 28 135 / var(--tw-text-opacity));
+  background-color: rgb(88 28 135 / var(--tw-text-opacity));
+  border-radius: 9999px;
+}
+.login button:hover{
+  background-color: white;
+  color: rgb(88 28 135 / var(--tw-text-opacity));
+}
+.login .profile-img {
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+  object-fit: contain;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+}
